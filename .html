@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostrar(resultado);
+
+    //Vea que en la operación de la variable resultado estamos realizando una operación de suma con el retorno de dos funciones, es decir, el retorno de la función a(10,20) con el retorno de la función b(30,2). La primera función devuelve 30 y la segunda 15. Al final tenemos la suma de los dos números, que es 45.
+</script>
